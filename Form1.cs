@@ -14,7 +14,7 @@ namespace taskk_2_0
             if (procCHEK.Length > 0) {
             foreach (Process proc in procCHEK) {
                     proc.Kill();
-                    MessageBox.Show("Kész!");
+                    //MessageBox.Show("Kész!");
                 }
             }
         }
@@ -22,13 +22,17 @@ namespace taskk_2_0
         private void button2_Click(object sender, EventArgs e)
         {
             Process[] processes = Process.GetProcessesByName("OUTLOOK");
-            foreach (Process proc in processes) { proc.Kill(); }
+            foreach (Process proc in processes) { proc.Kill();
+                //MessageBox.Show("Kész!");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Process[] processes = Process.GetProcessesByName("SPOOL");
-            foreach (Process proc in processes) { proc.Kill(); }
+            foreach (Process proc in processes) { proc.Kill();
+                //MessageBox.Show("Kész!");
+            }
 
         }
     }
